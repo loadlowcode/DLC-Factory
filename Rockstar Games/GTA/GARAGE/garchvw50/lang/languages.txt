@@ -1,0 +1,114 @@
+HOW TO TRANSLATE GAME ARCHIVE VIEWER INTO YOUR LANGUAGE
+-------------------------------------------------------
+
+  To translate Game Archive Viewer into your language,
+do following actions:
+
+> Make copy of file "english.lng" or of any other LNG
+file found in this ("lang") directory.
+
+> Open that copy with Notepad and set tags:
+Language=<Name of your language>
+LangID=<ID of your language>
+Flag=<Name of file with language icon>
+CharSet=<Fonts' charset>
+Author=<Your name>
+
+  It's recommended to type name of language and name of
+author in English because it might be impossible to
+read this values while GAcrhVw is switched into
+language with different fonts' charset.
+  You can create a little icon (16x16 pixels) for your
+language. Save it in the same directory as LNG file
+("lang") in Windows Bitmap format (".bmp"). To create
+such icon you can use file "flag.psd". Please modify
+only the "Flag" layer. Also please note that all
+points that have lime color (0x00FF00) will be
+transparent, so try not to use this color in your
+icon (for example, replace it with 0x00FE00).
+  Values for LangID and CharSet fields can be found
+below.
+
+> Translate all strings after equal signs ("="). Try not
+to change format specifiers (for example, "|", "%s", "%d").
+
+> Test your translation, check that anything is working
+properly and, if you want, you can send it to my email:
+denull@narod.ru.
+
+-------------------------------------------------------
+
+Language Identificators and Font Charsets
+(taken from "Win32 Programmer's Reference")
+
+-------------------------------------------------------
+Language		LandID
+-------------------------------------------------------
+Arfikaans		54
+Albanian		28
+Arabic			1
+Basque			45
+Belarusian		35
+Bulgarian		2
+Catalan			3
+Chinese			4
+Croatian		26
+Czech			5
+Danish			6
+Dutch			19
+English			9
+Estonian		37
+Faeroese		56
+Farsi			41
+Finnish			11
+French			12
+German			7
+Greek			8
+Hebrew			13
+Hungarian		14
+Icelandic		15
+Indonesian		33
+Italian			16
+Japanese		17
+Korean			18
+Latvian			38
+Lithuanian		39
+Norwegian		20
+Polish			21
+Portuguese		22
+Romanian		24
+Russian			25
+Serbian			26
+Slovak			27
+Slovenian		36
+Spanish			10
+Swedish			29
+Thai			30
+Turkish			31
+Ukrainian		34
+Vietnamese		42
+
+
+-------------------------------------------------------
+Language (Group)	LandID
+-------------------------------------------------------
+Default			1
+Japanese shift-JIS	128
+Korean (Wansung)	129
+Simplified Chinese	134
+Traditional Chinese	136
+Korean (Johab)		130
+Hebrew			177
+Arabic			178
+Greek			161
+Turkish			162
+Vietnamese		163
+Thai			222
+East Europe		238
+Russian			204
+Baltic			186
+
+-------------------------------------------------------
+
+deNULL (denull@narod.ru)
+http://denull.ucoz.ru/
